@@ -1,9 +1,9 @@
 ---
 layout: guide
-title: "🟣 Nuvio"
+title: "🚀 Nuvio"
 ---
 
-# 🟣 Nuvio
+# 🚀 Nuvio
 
 ![Nuvio Collections](../images/collections.webp)
 
@@ -16,7 +16,7 @@ title: "🟣 Nuvio"
 
 If you are a beginner and want to set up **Nuvio** from scratch, skip the **🚀 Collections** chapter below and proceed with *Nuvio Account Initialization*. If you already know what you're doing and only need the *assets* for the collections, check out the chapter below.
 
-## 🚀 Collections
+## 🍿 Collections
 
 If you don't want to follow the full setup above and only need the files, images, collections, or ready-made templates, this section is for you.
 
@@ -39,20 +39,20 @@ So, for example, if a streaming catalog, genre catalog, decade catalog, or theme
 
 This works best if you use my **AIOMetadata Catalogs** catalogs and my **Nuvio Collections** directly from the repository, or if your own Nuvio collections point to the image URLs from my repo. This way, when the files are updated there, your setup can automatically benefit from the refreshed assets without you manually replacing images every time.
 
-### Useful Links
+### Assets
 
 Here are the main files and resources:
 
 * [**Collections Assets**](https://github.com/luckynumb3rs/stremio-perfect-setup/tree/main/collections)
    * This contains all collection assets, title logos, cover, focused, backdrops, SVG files, and related resources.
    * Use this if you want to browse, download, modify, or reuse individual assets.
-* [**AIOMetadata Catalogs**](https://raw.githubusercontent.com/luckynumb3rs/stremio-perfect-setup/refs/heads/main/templates/AIOMetadata-Catalogs.json)
+* [**AIOMetadata Catalogs**](https://raw.githubusercontent.com/luckynumb3rs/stremio-perfect-setup/refs/heads/main/templates/AIOMetadata-Catalogs.json) (*JSON*)
    * Use this if you already have your own AIOMetadata setup and only want to import the catalogs.
    * This is useful if you don't want to overwrite your full AIOMetadata configuration.
-* [**Full AIOMetadata Configuration**](https://raw.githubusercontent.com/luckynumb3rs/stremio-perfect-setup/refs/heads/main/templates/AIOMetadata.json)
+* [**AIOMetadata Full Configuration**](https://raw.githubusercontent.com/luckynumb3rs/stremio-perfect-setup/refs/heads/main/templates/AIOMetadata.json) (*JSON*)
    * Use this if you want the complete AIOMetadata configuration from this guide.
    * This is the easiest option if you are starting fresh or want the closest match to the setup described here.
-* [**Nuvio Collections**](https://raw.githubusercontent.com/luckynumb3rs/stremio-perfect-setup/refs/heads/main/collections/nuvio-collections.json)
+* [**Nuvio Collections**](https://raw.githubusercontent.com/luckynumb3rs/stremio-perfect-setup/refs/heads/main/collections/nuvio-collections.json) (*JSON*)
    * This is the pre-configured collections file for Nuvio.
    * You can import it manually into your Nuvio account, especially if you are using the matching AIOMetadata catalogs.
 * [**Nuvio Community Collections Pack**](https://nuvioapp.space/community-collections/nuvio-perfect-collections-incl-dynamic-backdrops-2)
@@ -68,7 +68,7 @@ Let's start by preparing your Nuvio account and app:
 1. Create an account on [**Nuvio**](https://nuvio.space/).
    * *This will be the account that stores your Nuvio profiles, addon setup, collections, and app settings.*
    * *Do not confuse this with your Stremio account. Nuvio uses its own account system.*
-2. Install the **Nuvio** app for your platform from [**Nuvio**](https://nuvio.space/).
+2. Install the **Nuvio** app for your platform as linked on the [**Nuvio**](https://nuvio.space/) homepage.
    * **IMPORTANT**: *Nuvio is not on all official app stores yet, so installation depends on your platform and may require sideloading or a manual install.*
    * *For Android and Android TV, it is already available on [**Play Store**](https://play.google.com/store/apps/details?id=com.nuvio.app).
    * *If you are using Windows, iOS, Tizen, WebOS, or any other platform, the process may be different. This is one of the reasons this chapter is still marked as work in progress.*
@@ -127,7 +127,7 @@ Once you have the Manifest URLs ready, go back to Nuvio in your browser:
       2. **AIOMetadata**
       3. **AIOStreams**
 
-## 🚀 4. Collections Pack
+## 🍿 4. Collections Pack
 
 Now let's add the collections pack that organizes the installed *AIOMetadata* catalogs together into the groups described in [**🔎 AIOMetadata**](4-AIOMetadata-Setup.md):
 
