@@ -31,4 +31,4 @@ In case you are wondering whether it's worth the effort, or you already have a T
 
 So, now that you know, it's up to you, but if you're up for it, let's do it 💪:
 
-# ✨ GO [**HERE**](https://luckynumb3rs.github.io/stremio-perfect-setup/) FOR THE EXTENDED GUIDE.
+# ✨ GO [**HERE**](https://luckynumb3rs.github.io/stremio-perfect-setup/) FOR THE GUIDE.
