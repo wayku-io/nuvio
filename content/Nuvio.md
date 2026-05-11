@@ -1,6 +1,6 @@
 # 🚀 [NUVIO FULL & EASY TOTAL BEGINNER'S GUIDE](https://luckynumb3rs.github.io/stremio-perfect-setup/guide/Nuvio/)
-
 **[⚡ DEBRID / 🧲 P2P / 🌐 HTTP]** (*WIP*)
+
 
 ![img](xggisjsbfh0h1 "Nuvio Perfect Setup (Collections)")
 
@@ -46,11 +46,11 @@ The cool part is the **Dynamic Backdrops**: Something you would probably not not
 
 Here are the main links:
 
-* [**Full Guide**](https://luckynumb3rs.github.io/stremio-perfect-setup/guide/Nuvio/)
+* [**Full Guide**](https://luckynumb3rs.github.io/stremio-perfect-setup/guide/Nuvio/) [**READ BEFORE ASKING QUESTIONS**]
 * [**Collections Assets**](https://github.com/luckynumb3rs/stremio-perfect-setup/tree/main/collections)
-* [**AIOMetadata Catalogs**](https://raw.githubusercontent.com/luckynumb3rs/stremio-perfect-setup/refs/heads/main/templates/AIOMetadata-Catalogs.json) (*JSON*)
-* [**AIOMetadata Full Configuration**](https://raw.githubusercontent.com/luckynumb3rs/stremio-perfect-setup/refs/heads/main/templates/AIOMetadata.json) (*JSON*)
-* [**Nuvio Collections**](https://raw.githubusercontent.com/luckynumb3rs/stremio-perfect-setup/refs/heads/main/collections/nuvio-collections.json) (*JSON*)
-* [**Nuvio Community Collections Pack**](https://nuvioapp.space/community-collections/nuvio-perfect-collections-incl-dynamic-backdrops-2)
+* [**AIOMetadata Catalogs**](https://raw.githubusercontent.com/luckynumb3rs/stremio-perfect-setup/refs/heads/main/templates/AIOMetadata-Catalogs.json) (*JSON*) [**Only catalogs** for existing setups, import into AIOMetadata *Catalogs* tab]
+* [**AIOMetadata Full Configuration**](https://raw.githubusercontent.com/luckynumb3rs/stremio-perfect-setup/refs/heads/main/templates/AIOMetadata.json) (*JSON*) [**Full** for new setups, import into AIOMetadata *Configuration* tab]
+* [**Nuvio Community Collections Pack**](https://nuvioapp.space/community-collections/nuvio-perfect-collections) [**Import directly** into Nuvio account]
+* [**Nuvio Collections**](https://raw.githubusercontent.com/luckynumb3rs/stremio-perfect-setup/refs/heads/main/collections/nuvio-collections.json) (*JSON*) [**Alternative** file for manual import]
 
 Hope you like it. Enjoy!
