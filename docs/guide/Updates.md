@@ -22,7 +22,7 @@ Here's a quick summary on how to update to the latest **AIOStreams** template ma
 6. On the "**Template Options**" page, you'll be able to personalize the configuration to match your preferences, as described on the [**📚 3. AIOStreams**](3-AIOStreams.md) step.
 7. On the "**Enter Credentials**" page, since you're loading the template over your existing configuration, all API keys needed should already be activated and filled. Otherwise, enter any missing/new ones.
 8. Click on "**Load Template**" and the template is loaded.
-9. **IMPORTANT**: If you made any changes to the configuration after you loaded it when you did the setup for the first time, you may need to do them again (e.g. language changes such as subtitles and language preferences, any addon modifications, etc.).
+9. **📢 IMPORTANT**: If you made any changes to the configuration after you loaded it when you did the setup for the first time, you may need to do them again (e.g. language changes such as subtitles and language preferences, any addon modifications, etc.).
 10. Click on "**Save**" on the "**Save & Install**" tab. No need to install the addon on Stremio/Nuvio again.
 
 ## AIOMetadata
@@ -30,7 +30,7 @@ Here's a quick summary on how to update to the latest **AIOStreams** template ma
 For **AIOMetadata**, there's normally not as many changes as AIOStreams so you shouldn't need to perform any updates unless explicitly required, so here are the steps if needed:
 1. Sign in to your **AIOMetadata** instance with your **UUID** and **Password**.
 2. Go to the "**Configuration**" tab, click "**Import Configuration**", and load the downloaded [**configuration file**](https://raw.githubusercontent.com/luckynumb3rs/stremio-perfect-setup/refs/heads/main/templates/AIOMetadata.json).
-3. **IMPORTANT**: If you made any changes to the configuration after you loaded it when you did the setup for the first time, you may need to do them again (e.g. enabled/disabled/added/removed catalogs, changed any anime settings, etc.).
+3. **📢 IMPORTANT**: If you made any changes to the configuration after you loaded it when you did the setup for the first time, you may need to do them again (e.g. enabled/disabled/added/removed catalogs, changed any anime settings, etc.).
 4. On the same "**Configuration**" tab, click "**Save Configuration**". No need to install the addon on Stremio/Nuvio again.
 5. **For Stremio**: Keep in mind that if you change catalog structure in AIOMetadata after you installed it on Stremio, you need to go to Cinebye, authenticate again with Stremio credentials, and click the **Refresh** icon to the right of AIOMetadata in the "**Manage Addons**" section.*
 

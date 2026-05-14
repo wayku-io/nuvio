@@ -9,7 +9,7 @@ title: "⚙️ 2. Setup Initialization"
 
 1. Create an account on [**Stremio**](https://www.stremio.com/) if you haven't created one yet.
 2. Open [**Stremio Web**](https://web.stremio.com) and **MAKE SURE** you're signed in with your account.
-   * **IMPORTANT**: *Do not confuse* [*www.stremio.com*](https://www.stremio.com)*, which is for account management, with* [*web.stremio.com*](https://web.stremio.com)*, which you **MUST** be signed in to for removing/installing the addons. Being signed in to* [*www.stremio.com*](https://www.stremio.com) *does not automatically sign you in to* [*web.stremio.com*](https://web.stremio.com)*, and your addons will not install on your account.*
+   * **📢 IMPORTANT**: *Do not confuse* [*www.stremio.com*](https://www.stremio.com)*, which is for account management, with* [*web.stremio.com*](https://web.stremio.com)*, which you **MUST** be signed in to for removing/installing the addons. Being signed in to* [*www.stremio.com*](https://www.stremio.com) *does not automatically sign you in to* [*web.stremio.com*](https://web.stremio.com)*, and your addons will not install on your account.*
    * *Obviously you need a browser to configure everything on this guide, including using the **Web** version of Stremio to remove and install addons. Don't worry though, after you set everything up **ONCE**, you can use your setup everywhere you use Stremio (Smart TV, Android, iOS, Windows, everywhere).*
 
    ![Sign In](../images/2.1.png)
@@ -33,7 +33,7 @@ title: "⚙️ 2. Setup Initialization"
    * *This will be the account that stores your Nuvio profiles, addon setup, collections, and app settings.*
    * *Do not confuse this with your Stremio account. Nuvio uses its own account system.*
 2. Install the **Nuvio** app for your platform as linked on the [**Nuvio**](https://nuvioapp.space/) homepage.
-   * **IMPORTANT**: *Nuvio is not on all official app stores yet, so installation depends on your platform and may require sideloading or a manual install.*
+   * **📢 IMPORTANT**: *Nuvio is not on all official app stores yet, so installation depends on your platform and may require sideloading or a manual install.*
    * *For Android and Android TV, it is already available on [**Play Store**](https://play.google.com/store/apps/details?id=com.nuvio.app).
    * *If you are using Windows, iOS, Tizen, WebOS, or any other platform, the process may be different. This is one of the reasons this chapter is still marked as work in progress.*
 3. Open the **Nuvio** app on your device.

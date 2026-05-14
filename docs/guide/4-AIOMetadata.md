@@ -52,7 +52,7 @@ Select an **AIOMetadata** instance from [**this**](https://uptime.ibbylabs.dev/a
 
    ![Display Language](../images/4.4.3.png)
 
-   * **NOTES**: 
+   * **📢 NOTES**: 
       * *If you encounter any issues with Trakt integration on AIOMetadata, it's probably because Trakt is rate limiting the instance you're using, or the instance provider has disabled it (if it says "Instance owner has not yet set up the Trakt integration."). In that case, try to do the AIOMetadata setup with another instance.*
       * *Alternatively, you can leave Trakt integration disabled, and hide the Trakt catalogs on the list (marked with a red **Trakt** tag on the right) by clicking the green eye icon for each. I know it's not ideal since you created a Trakt account already, but there's nothing we can do about it. You can still add other catalogs from the other sources there.*
       * *There are also good alternatives to Trakt if you disable it, both for watch history tracking, and curated catalogs, which you can check out in [**🛠️ Additional Stuff**](7-Additional-Stuff.md#enriching-your-catalogs-trakt-alternatives).*
@@ -74,7 +74,7 @@ Select an **AIOMetadata** instance from [**this**](https://uptime.ibbylabs.dev/a
 8. **🚀 Nuvio**:
    * Copy the **Manifest URL** shown when you click *Save* and proceed to [**🧹 5. Configuration**](5-Configuration.md#nuvio) to install them.
 
->**NOTES FOR LATER:**
+>**📢 NOTES FOR LATER:**
 >* *Keep in mind for later that if you change catalog structure in AIOMetadata after you installed it on Stremio, or if you add the CouchMoney lists from Step 6 below, then go to Cinebye, authenticate again with Stremio credentials, and click the **Refresh** icon to the right of AIOMetadata in the "**Manage Addons**" section.*
 >![Refresh Addons](../images/5.6.png)
 

@@ -10,7 +10,7 @@
 
 Don't be scared. Although it may look like a very long guide, it's actually just a few simple steps and very easy. I just wanted to be thorough and describe everything totally step-by-step so you understand what you're doing.
 
->**NOTES**:
+>**📢 NOTES**:
 >* If you already followed this guide and would like to **update to the latest template** (check out the version number on the title), go to [**🔔 Updates**](https://luckynumb3rs.github.io/stremio-perfect-setup/guide/Updates) on the extended guide.
 >* **If you followed this guide and are encountering issues or have configuration questions**, go to [**❓ Configuration Q&A**](https://luckynumb3rs.github.io/stremio-perfect-setup/guide/8-Configuration-QA) on the extended guide. If you're just starting, remember this for later in case you need it. **PLEASE avoid asking questions that are already answered there**.
 >* **🙏 A very explicit special THANKS** to the **Stremio** developers which goes without saying, and all the community collaborators without which we wouldn't be able to enjoy any of it: [**TamTaro**](https://ko-fi.com/tamtaro) for the template base and SEL filters, [**Vidhin**](https://ko-fi.com/vidhin) for the Regexes, and the addon developers [**Viren**](https://ko-fi.com/Viren070) for AIOStreams, [**Cedya**](https://buymeacoffee.com/cedya) for AIOMetadata, [**Sanopandit**](https://ko-fi.com/timilsinabimal) for Watchly, [**Sonic**](https://ko-fi.com/sonicx161) for AIOManager, the public addon instance hosters which make everything so much simpler for most, and anyone else I may have failed to mention. All of these people continue to develop and improve them actively together with the Stremio community, so shout out to all of them for their wonderful work, and consider buying them a coffee if you agree with me! Since a few of you have also asked about tipping me for helping, even though I did it for fun and an very happy if my guide helped you, [**here**](https://ko-fi.com/luckynumb3rs) is my coffee link :)
@@ -94,7 +94,7 @@ First, let's start by creating the accounts (those who already have them can ski
 Second, let's prepare the Stremio account properly:
 
 1. Open [**Stremio Web**](https://web.stremio.com) and **MAKE SURE** you're signed in with your account.
-   * **IMPORTANT**: *Do not confuse* [*www.stremio.com*](https://www.stremio.com)*, which is for account management, with* [*web.stremio.com*](https://web.stremio.com)*, which you **MUST** be signed in to for removing/installing the addons. Being signed in to* [*www.stremio.com*](https://www.stremio.com) *does not automatically sign you in to* [*web.stremio.com*](https://web.stremio.com)*, and your addons will not install on your account.*
+   * **📢 IMPORTANT**: *Do not confuse* [*www.stremio.com*](https://www.stremio.com)*, which is for account management, with* [*web.stremio.com*](https://web.stremio.com)*, which you **MUST** be signed in to for removing/installing the addons. Being signed in to* [*www.stremio.com*](https://www.stremio.com) *does not automatically sign you in to* [*web.stremio.com*](https://web.stremio.com)*, and your addons will not install on your account.*
    * *Obviously you need a browser to configure everything on this guide, including using the **Web** version of Stremio to remove and install addons. Don't worry though, after you set everything up **ONCE**, you can use your setup everywhere you use Stremio (Smart TV, Android, iOS, Windows, everywhere).*
 2. Go to "**Settings**" in [**Stremio Account**](https://www.stremio.com) and enable **Trakt Scrobbling** by connecting it to your Trakt account.
    * *This will allow Stremio to sync show progress and history with Trakt.*
@@ -164,7 +164,7 @@ Select an **AIOStreams** instance from [**this**](https://uptime.ibbylabs.dev/ai
    * *If you get an error when saving that says "Failed to fetch manifest..." and/or "502 - Bad Gateway", it means the addons mentioned there are temporarily offline. Go to **Addons → Installed Addons**, disable the problematic addons mentioned, and proceed with saving. Go back at a later time to re-enable the addons and save again.*
 11. Click "**Install**" and install the addon on **Stremio Web** (recommended, but you can also install on Stremio app if you want, but make sure you're signed in to your Stremio account wherever you install it).
 
->**NOTES FOR LATER:**
+>**📢 NOTES FOR LATER:**
 >* *If you use a Debrid service, and are in a country where you can't torrent, be careful to not open any links with the 🧲 icon. They should normally never appear if you have a Debrid configured, but just making sure you know.*
 >* *If there are no streams for a show, you will see statistics instead (looking like [this](https://luckynumb3rs.github.io/stremio-perfect-setup/guide/8-Configuration-QA/#there-are-some-numbers-being-shown-on-the-streams-list-instead-of-the-usual-details-and-i-am-being-redirected-to-github-when-i-click-them)), so that you can find out why. Do not click them, they are only informational and will take you to GitHub if you do.*
 >* *If you see that you are getting results too slowly, try changing the fetching strategy. Go to **Addons**, scroll down to **Addon Fetching Strategy**. and select **Dynamic**. There should already be an exit condition pre-filled, which you can leave as is, and save the configuration. However, keep in mind that this might leave out relevant results, so try it yourself. On the other hand, if you feel you're not getting enough good results, do the opposite and select **Default** instead.*
@@ -201,7 +201,7 @@ Select an **AIOMetadata** instance from [**this**](https://uptime.ibbylabs.dev/#
    * *If you want some ready-to-use and well-maintained lists, while on the Trakt tab, search for the lists from user "snoak", and you will be able to import a lot of interesting lists. I have already included some of them in the catalog, but you can add more.*
    * **For Anime users**: *If you want to enable search for Anime, make sure to go to to the "Search" tab and enable both "Anime Search Engine" switches.*
    * **For other languages**: *If you want the metadata (descriptions, titles, etc.) to show in a different language than English, go to the "General" tab and change the "Display Language".*
-   * **NOTES**: 
+   * **📢 NOTES**: 
       * *If you encounter any issues with Trakt integration on AIOMetadata, it's probably because Trakt is rate limiting the instance you're using, or the instance provider has disabled it (if it says "Instance owner has not yet set up the Trakt integration."). In that case, try to do the AIOMetadata setup with another instance.*
       * *Alternatively, you can leave Trakt integration disabled, and hide the Trakt catalogs on the list (marked with a red **Trakt** tag on the right) by clicking the green eye icon for each. I know it's not ideal since you created a Trakt account already, but there's nothing we can do about it. You can still add other catalogs from the other sources there.*
       * *There are also good alternatives to Trakt if you disable it, both for watch history tracking, and curated catalogs, which you can check out in* [**🛠️ Additional Stuff**](https://luckynumb3rs.github.io/stremio-perfect-setup/guide/7-Additional-Stuff/#enriching-your-catalogs-trakt-alternatives) *on the extended guide.*
@@ -213,7 +213,7 @@ Select an **AIOMetadata** instance from [**this**](https://uptime.ibbylabs.dev/#
    * *If you get a "AddonsPushedToAPI Max descriptor size reached" error when installing, you probably have too many catalogs on AIOMetadata. Disable some, save the configuration, and try to install it again.*
    * *If you didn't want to get an API key for Gemini, go to the **Search** tab and disable **AI-Powered Search** to be able to save.*
 
->**NOTES FOR LATER:**
+>**📢 NOTES FOR LATER:**
 >* *Keep in mind that if you want to change catalogs after you have installed AIOMetadata on Stremio, you need to refresh the installation, otherwise the catalogs with not show. You do that with Cinebye below.*
 
 ---
@@ -237,7 +237,7 @@ Go to [**this**](https://cinebye.elfhosted.com/) **Cinebye** instance and:
    4. *Local Files*
 5. Scroll back up to "**3 - Sync Addons**" and click on "**Sync to Stremio**".
 
->**NOTES FOR LATER:**
+>**📢 NOTES FOR LATER:**
 >* *Keep in mind for later that if you change catalog structure in AIOMetadata after you installed it on Stremio, or if you add the CouchMoney lists from Step 6 below, then come back to Cinebye, authenticate again with Stremio credentials, and click the **Refresh** icon to the right of AIOMetadata in the "**Manage Addons**" section.*
 
 ---

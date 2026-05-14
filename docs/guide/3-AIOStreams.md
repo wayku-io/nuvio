@@ -101,7 +101,7 @@ Select an **AIOStreams** instance from [**this**](https://uptime.ibbylabs.dev/ai
    * Copy the **Manifest URL** shown when you click *Save* and proceed to the [**4. 🔎 AIOMetadata**](4-AIOMetadata.md) step.
 
 
->**NOTES FOR LATER:**
+>**📢 NOTES FOR LATER:**
 >* *If you use a Debrid service, and are in a country where you can't torrent, be careful to not open any links with the 🧲 icon. They should normally never appear if you have a Debrid configured, but just making sure you know.*
 >* *If there are no streams for a show, you will see statistics instead (looking like below), so that you can find out why. Do not click them, they are only informational and will take you to GitHub if you do.*
 >![Show Statistics](../images/3.12.0.png)

@@ -7,7 +7,7 @@
 
 Don't be scared. Although it may look like a very long guide, it's actually just a few simple steps and very easy. I just wanted to be thorough and describe everything totally step-by-step so you understand what you're doing.
 
->**NOTES:**
+>**📢 NOTES:**
 >* **✨ NEW:** If you want to use this setup with **Nuvio** instead of Stremio, or you want a good **Nuvio Collections** setup, including dynamic backdrops, title logos, and assets, check out the new [**🚀 Nuvio**]({{GUIDE_PATH}}/Nuvio.md) page.
 >* **If you are a total beginner and are curious to understand the concepts around Stremio** and how it works, go to [**🔰 Beginner Concepts**]({{GUIDE_PATH}}/0-Beginner-Concepts.md).
 >* If you already followed this guide and would like to **update to the latest template** (check out the version number on the title), go to [**🔔 Updates**]({{GUIDE_PATH}}/Updates.md).
