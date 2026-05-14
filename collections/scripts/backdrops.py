@@ -5,7 +5,7 @@ Generate collection backdrops for folders defined in collections/nuvio-collectio
 Purpose:
     This is the wrapper entry point most users should run. It:
     1. reads the folder definitions from `nuvio-collections.json`
-    2. resolves the underlying TMDB catalog filters from `AIOMetadata-Catalogs.json`
+    2. resolves the underlying TMDB catalog filters from `AIOMetadata.json`
     3. merges all catalogs assigned to the same folder into one backdrop job
     4. scans the matching folder cover image to derive one accent color
     5. calls `backdrop.py` once per folder
@@ -26,8 +26,9 @@ Important parameters:
         Path to the `nuvio-collections.json` file to read folder definitions
         from.
     --catalogs-file
-        Path to the `AIOMetadata-Catalogs.json` file used to resolve TMDB
-        discover filters.
+        Path to the AIOMetadata catalog JSON used to resolve TMDB discover
+        filters. Supports either `AIOMetadata.json` or
+        `AIOMetadata-Catalogs.json`.
     --output-root
         Collections root where generated files are written in the existing
         layout: `<group>/backdrop/<folder>.jpg` plus a matching `.webp`
@@ -125,7 +126,7 @@ from backdrop import parse_focus_value, resolve_outputs
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent.parent
 DEFAULT_COLLECTIONS_FILE = REPO_ROOT / "collections" / "nuvio-collections.json"
-DEFAULT_CATALOGS_FILE = REPO_ROOT / "templates" / "AIOMetadata-Catalogs.json"
+DEFAULT_CATALOGS_FILE = REPO_ROOT / "templates" / "AIOMetadata.json"
 DEFAULT_OUTPUT_ROOT = SCRIPT_DIR.parent
 DEFAULT_COVER_ROOT = SCRIPT_DIR.parent
 PRINT_LOCK = threading.Lock()
@@ -224,8 +225,14 @@ def load_json(path):
 
 def build_catalog_index(catalogs_data):
     """Index catalogs by `(catalog_id, type)` for quick lookup from folder sources."""
+    catalogs = catalogs_data.get("catalogs")
+    if catalogs is None:
+        catalogs = ((catalogs_data.get("config") or {}).get("catalogs"))
+    if catalogs is None:
+        raise ValueError("Catalog JSON must contain either `catalogs` or `config.catalogs`.")
+
     index = {}
-    for catalog in catalogs_data["catalogs"]:
+    for catalog in catalogs:
         index[(catalog["id"], catalog.get("type"))] = catalog
     return index
 
@@ -462,7 +469,11 @@ def main():
     parser.add_argument("--preferred-language", default="en", help="Preferred Fanart artwork language code. Default: en")
     parser.add_argument("--cover-root", default=str(DEFAULT_COVER_ROOT), help="Collections root containing `<group>/cover/<folder>.*` images for runtime accent scanning")
     parser.add_argument("--collections-file", default=str(DEFAULT_COLLECTIONS_FILE), help="Path to nuvio-collections.json")
-    parser.add_argument("--catalogs-file", default=str(DEFAULT_CATALOGS_FILE), help="Path to AIOMetadata-Catalogs.json")
+    parser.add_argument(
+        "--catalogs-file",
+        default=str(DEFAULT_CATALOGS_FILE),
+        help="Path to AIOMetadata catalog JSON (`AIOMetadata.json` or `AIOMetadata-Catalogs.json`)",
+    )
     parser.add_argument("--output-root", default=str(DEFAULT_OUTPUT_ROOT), help="Root collections folder where `<group>/backdrop/<folder>.jpg` files and matching `.webp` sidecars are written")
     parser.add_argument("--catalog", action="append", default=[], help="Only generate for the matching folder shorthand(s), like `genres/k-drama` or `discover/popular`. Repeat this flag to target multiple folders.")
     parser.add_argument("--folder-id", action="append", default=[], help="Only generate for the matching folder id(s). Repeat this flag to target multiple folders.")

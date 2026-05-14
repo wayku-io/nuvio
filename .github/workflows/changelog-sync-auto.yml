@@ -1,0 +1,34 @@
+name: Changelog Sync Auto
+
+on:
+  push:
+    branches:
+      - "**"
+
+permissions:
+  contents: write
+
+jobs:
+  auto-sync-changelog:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync guide changelog
+        run: bash scripts/sync-changelog.sh
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet -- docs/guide/Changelog.md; then
+            echo "No sync changes to commit"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/guide/Changelog.md
+          git commit -m "chore: auto-sync changelog output"
+          git push

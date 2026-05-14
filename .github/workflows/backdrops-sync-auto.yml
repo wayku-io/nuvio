@@ -1,0 +1,65 @@
+name: Backdrops Sync Auto
+
+on:
+  push:
+    branches:
+      - "**"
+    paths:
+      - "collections/nuvio-collections.json"
+      - "templates/AIOMetadata.json"
+      - "templates/AIOMetadata-Catalogs.json"
+      - "collections/*/cover/*"
+      - "collections/scripts/backdrops.py"
+      - "collections/scripts/backdrop.py"
+      - "collections/scripts/accent.py"
+
+permissions:
+  contents: write
+
+jobs:
+  auto-sync-backdrops:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pillow requests
+
+      - name: Generate missing backdrops
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          FANART_API_KEY: ${{ secrets.FANART_API_KEY }}
+        run: |
+          python3 -B collections/scripts/backdrops.py \
+            --api-key "$TMDB_API_KEY" \
+            --fanart-key "$FANART_API_KEY" \
+            --profile compressed \
+            --parallelism 3 \
+            --missing-only
+
+      - name: Clean Python cache folders
+        run: |
+          find . -type d -name "__pycache__" -prune -exec rm -rf {} +
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet -- collections; then
+            echo "No backdrop changes to commit"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add collections
+          git commit -m "chore: generate missing backdrops"
+          git push

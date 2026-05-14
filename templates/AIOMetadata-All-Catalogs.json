@@ -1184,6 +1184,286 @@
       }
     },
     {
+      "id": "tmdb.discover.movie.streaming.jiohotstar",
+      "type": "movie",
+      "name": "🎬 JioHotstar",
+      "enabled": true,
+      "showInHome": true,
+      "source": "tmdb",
+      "metadata": {
+        "discover": {
+          "version": 2,
+          "source": "tmdb",
+          "mediaType": "movie",
+          "params": {
+            "sort_by": "popularity.desc",
+            "include_adult": false,
+            "watch_region": "IN",
+            "with_watch_providers": "2336",
+            "vote_count.gte": 25,
+            "with_release_type": "4|5|6"
+          },
+          "formState": {
+            "catalogName": "🎬 JioHotstar",
+            "discoverSource": "tmdb",
+            "sortBy": "popularity.desc",
+            "catalogType": "movie",
+            "includeAdult": false,
+            "releasedOnly": true,
+            "watchRegion": "IN",
+            "watchProviders": [
+              {
+                "id": 2336,
+                "label": "JioHotstar"
+              }
+            ],
+            "providerJoinMode": "or",
+            "voteCountMin": 25
+          }
+        }
+      }
+    },
+    {
+      "id": "tmdb.discover.series.streaming.jiohotstar",
+      "type": "series",
+      "name": "🎬 JioHotstar",
+      "enabled": true,
+      "showInHome": true,
+      "source": "tmdb",
+      "metadata": {
+        "discover": {
+          "version": 2,
+          "source": "tmdb",
+          "mediaType": "tv",
+          "params": {
+            "sort_by": "popularity.desc",
+            "include_adult": false,
+            "watch_region": "IN",
+            "with_watch_providers": "2336",
+            "vote_count.gte": 10,
+            "with_status": "0|3|4|5"
+          },
+          "formState": {
+            "catalogName": "🎬 JioHotstar",
+            "discoverSource": "tmdb",
+            "sortBy": "popularity.desc",
+            "catalogType": "series",
+            "includeAdult": false,
+            "releasedOnly": true,
+            "watchRegion": "IN",
+            "watchProviders": [
+              {
+                "id": 2336,
+                "label": "JioHotstar"
+              }
+            ],
+            "providerJoinMode": "or",
+            "voteCountMin": 10
+          }
+        }
+      }
+    },
+    {
+      "id": "tmdb.discover.movie.streaming.starz",
+      "type": "movie",
+      "name": "🎬 Starz",
+      "enabled": true,
+      "showInHome": true,
+      "source": "tmdb",
+      "metadata": {
+        "discover": {
+          "version": 2,
+          "source": "tmdb",
+          "mediaType": "movie",
+          "params": {
+            "sort_by": "popularity.desc",
+            "include_adult": false,
+            "watch_region": "US",
+            "with_watch_providers": "43|1794|1855|634",
+            "vote_count.gte": 25,
+            "with_release_type": "4|5|6"
+          },
+          "formState": {
+            "catalogName": "🎬 Starz",
+            "discoverSource": "tmdb",
+            "sortBy": "popularity.desc",
+            "catalogType": "movie",
+            "includeAdult": false,
+            "releasedOnly": true,
+            "watchRegion": "US",
+            "watchProviders": [
+              {
+                "id": 43,
+                "label": "Starz"
+              },
+              {
+                "id": 1794,
+                "label": "Starz Amazon Channel"
+              },
+              {
+                "id": 1855,
+                "label": "Starz Apple TV Channel"
+              },
+              {
+                "id": 634,
+                "label": "Starz Roku Premium Channel"
+              }
+            ],
+            "providerJoinMode": "or",
+            "voteCountMin": 25
+          }
+        }
+      }
+    },
+    {
+      "id": "tmdb.discover.series.streaming.starz",
+      "type": "series",
+      "name": "🎬 Starz",
+      "enabled": true,
+      "showInHome": true,
+      "source": "tmdb",
+      "metadata": {
+        "discover": {
+          "version": 2,
+          "source": "tmdb",
+          "mediaType": "tv",
+          "params": {
+            "sort_by": "popularity.desc",
+            "include_adult": false,
+            "watch_region": "US",
+            "with_watch_providers": "43|1794|1855|634",
+            "vote_count.gte": 10,
+            "with_status": "0|3|4|5"
+          },
+          "formState": {
+            "catalogName": "🎬 Starz",
+            "discoverSource": "tmdb",
+            "sortBy": "popularity.desc",
+            "catalogType": "series",
+            "includeAdult": false,
+            "releasedOnly": true,
+            "watchRegion": "US",
+            "watchProviders": [
+              {
+                "id": 43,
+                "label": "Starz"
+              },
+              {
+                "id": 1794,
+                "label": "Starz Amazon Channel"
+              },
+              {
+                "id": 1855,
+                "label": "Starz Apple TV Channel"
+              },
+              {
+                "id": 634,
+                "label": "Starz Roku Premium Channel"
+              }
+            ],
+            "providerJoinMode": "or",
+            "voteCountMin": 10
+          }
+        }
+      }
+    },
+    {
+      "id": "tmdb.discover.movie.streaming.shudder",
+      "type": "movie",
+      "name": "🎬 Shudder",
+      "enabled": true,
+      "showInHome": true,
+      "source": "tmdb",
+      "metadata": {
+        "discover": {
+          "version": 2,
+          "source": "tmdb",
+          "mediaType": "movie",
+          "params": {
+            "sort_by": "popularity.desc",
+            "include_adult": false,
+            "watch_region": "US",
+            "with_watch_providers": "99|204|2049",
+            "vote_count.gte": 10,
+            "with_release_type": "4|5|6"
+          },
+          "formState": {
+            "catalogName": "🎬 Shudder",
+            "discoverSource": "tmdb",
+            "sortBy": "popularity.desc",
+            "catalogType": "movie",
+            "includeAdult": false,
+            "releasedOnly": true,
+            "watchRegion": "US",
+            "watchProviders": [
+              {
+                "id": 99,
+                "label": "Shudder"
+              },
+              {
+                "id": 204,
+                "label": "Shudder Amazon Channel"
+              },
+              {
+                "id": 2049,
+                "label": "Shudder Apple TV Channel"
+              }
+            ],
+            "providerJoinMode": "or",
+            "voteCountMin": 10
+          }
+        }
+      }
+    },
+    {
+      "id": "tmdb.discover.series.streaming.shudder",
+      "type": "series",
+      "name": "🎬 Shudder",
+      "enabled": true,
+      "showInHome": true,
+      "source": "tmdb",
+      "metadata": {
+        "discover": {
+          "version": 2,
+          "source": "tmdb",
+          "mediaType": "tv",
+          "params": {
+            "sort_by": "popularity.desc",
+            "include_adult": false,
+            "watch_region": "US",
+            "with_watch_providers": "99|204|2049",
+            "vote_count.gte": 0,
+            "with_status": "0|3|4|5"
+          },
+          "formState": {
+            "catalogName": "🎬 Shudder",
+            "discoverSource": "tmdb",
+            "sortBy": "popularity.desc",
+            "catalogType": "series",
+            "includeAdult": false,
+            "releasedOnly": true,
+            "watchRegion": "US",
+            "watchProviders": [
+              {
+                "id": 99,
+                "label": "Shudder"
+              },
+              {
+                "id": 204,
+                "label": "Shudder Amazon Channel"
+              },
+              {
+                "id": 2049,
+                "label": "Shudder Apple TV Channel"
+              }
+            ],
+            "providerJoinMode": "or",
+            "voteCountMin": 0
+          }
+        }
+      }
+    },
+    {
       "id": "tmdb.discover.movie.genres.action",
       "type": "movie",
       "name": "🎭 Action",
