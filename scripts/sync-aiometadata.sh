@@ -45,6 +45,12 @@ try:
 except KeyError as exc:
     raise SystemExit(f"Missing expected key in source file: {exc}") from exc
 
+if "metadata" in source_data and isinstance(source_data["metadata"], dict):
+    source_data["metadata"]["totalCatalogs"] = len(source_catalogs)
+    source_data["metadata"]["enabledCatalogs"] = sum(
+        1 for catalog in source_catalogs if catalog.get("enabled")
+    )
+
 
 def catalogs_payload(catalogs):
     return {
@@ -72,6 +78,7 @@ if "metadata" in all_config and isinstance(all_config["metadata"], dict):
         1 for catalog in all_catalogs if catalog.get("enabled")
     )
 
+write_if_changed(source_file, source_data)
 write_if_changed(catalogs_file, catalogs_payload(source_catalogs))
 write_if_changed(all_file, all_config)
 write_if_changed(catalogs_all_file, catalogs_payload(all_catalogs))

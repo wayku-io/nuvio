@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# 🎬 STREMIO/NUVIO FULL & EASY TOTAL BEGINNER'S GUIDE
+# 🎬 STREMIO/NUVIO BEGINNER'S GUIDE
 **[⚡ DEBRID / 🧲 P2P / 🌐 HTTP]** (*v2.0*)
 
 ![Stremio (left) / Stream Sources (center) / Nuvio (right)](images/home.jpg)
