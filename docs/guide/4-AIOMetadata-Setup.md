@@ -34,7 +34,7 @@ Select an **AIOMetadata** instance from [**this**](https://uptime.ibbylabs.dev/a
          * **📚 TVDB**, ... (Disabled initially).
       * **🎬 Streaming**: Titles grouped by streaming provider or platform source.
       * **🎭 Genres**: Catalogs grouped by genre and content type.
-      * **🍥 Anime**: Anime-focused catalogs across different styles and themes (Disabled initially).
+      * **🍥 Anime**: Anime-focused catalogs across different styles and themes (Partially disabled initially).
       * **🎨 Themes**: Collections built around moods, topics, and story patterns.
       * **🏰 Studios**: Catalogs grouped by well-known studios or franchises (Disabled initially).
       * **🎥 Decades**: Titles grouped by release decade and era.
